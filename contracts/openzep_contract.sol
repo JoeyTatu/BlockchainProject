@@ -4,7 +4,7 @@
 // OpenZeppelin Contracts v4.4.1 (token/ERC20/ERC20.sol)
 // OpenZeppelin Contracts v4.4.1 (token/ERC20/IERC20.sol)
 
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.0;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -178,7 +178,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * construction.
      */
     constructor() {
-        _name = "Joey Tatú - 15015556"; //name of token to be created
+        _name = "Joey Tatu - 15015556"; //name of token to be created
         _symbol = "JTAT"; // symbol of token to be created 
 
         _mint(msg.sender, 1000000000000000000000000); //1000000.000000000000000000
