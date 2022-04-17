@@ -2,13 +2,35 @@ Been working on Blockchain Labs before creating this repo. Just in case one thou
 
 The Blockchain Labs repo can be found here: [github.com/JoeyTatu/BlockchainLabs](https://github.com/JoeyTatu/BlockchainLabs)
 
-## Creating an Ethereum account ##
-
-MetaMask has been used to create an Ethereum address. 
 
 
-## Creating the Token ##
+## 1. Create an Ethereum account ##
 
-Compile and deploy the ```openzep_contract.sol ``` file in https://remix.ethereum.org/
+Fist we need to install the required packages:
+    ```npm install```
 
-Verify and public the token on Etherscan. 
+Create a .env file in the main folder and add:
+    ```PASSPHRASE = "{Insert passphrase here}"```
+
+Example for testing:
+    ```PASSPHRASE = "pass phrase pass phrase pass phrase pass phrase pass phrase pass phrase pass phrase"```
+
+Ensure the .env file is saved before continuing.
+
+Run: ```node .\crypto\wallet.js```
+
+
+
+## 2. Create an ERC20-compliant, fixed-supply token ##
+
+MetaMask should be installed and set up in the browser. 
+Copy the contents from ```conctacts/openzep_contract.sol```.
+
+On https://remix.ethereum.org/, create a new contracts file.
+Compile and deploy the token. 
+
+It's also good practise to verify and publish the token on Etherscan.
+
+
+
+## 3. Deploy the token contract to the Ethereum Test Net network. ##
