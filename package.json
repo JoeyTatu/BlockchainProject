@@ -1,4 +1,21 @@
 {
+  "name": "blockchainproject",
+  "description": "",
+  "version": "1.0.0",
+  "main": "erc20_contract.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeyTatu/BlockchainProject.git"
+  },
+  "author": "Joey.Tatu@student.ncirl.ie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeyTatu/BlockchainProject/issues"
+  },
+  "homepage": "https://github.com/JoeyTatu/BlockchainProject#readme",
   "dependencies": {
     "bip39": "^3.0.4",
     "bip44": "^0.0.1",
