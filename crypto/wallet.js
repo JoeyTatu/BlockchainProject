@@ -47,6 +47,9 @@ const getWallet = async() => {
     // Get private key and assign it
     const privateKey = wallet.getPrivateKey();
 
+    // Print private key to console
+    console.log(`Private key: 0x${privateKey.toString('hex')}`);
+
 }
 
 // Calling getwallet function

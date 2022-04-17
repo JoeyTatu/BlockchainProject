@@ -3,7 +3,9 @@
     "bip39": "^3.0.4",
     "bip44": "^0.0.1",
     "dotenv": "^16.0.0",
+    "ethereumjs-tx": "^2.1.2",
     "ethereumjs-wallet": "^1.0.2",
-    "keccak256": "^1.0.6"
+    "keccak256": "^1.0.6",
+    "web3": "^1.7.3"
   }
 }
