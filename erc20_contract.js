@@ -162,16 +162,26 @@ const transferTokens = async(fromAddress, toAddress, amount) => {
 }
 
 // Test to see if methods are working
-const getAllInfo = async => {
+// const getAllInfo = async => {
     
-    // Call methods
-    getName();
-    getSymbol();
-    getDecimals();
-    getTotalSupply();
-    getBalance(ownerAddress);
-    transferTokens(ownerAddress,"0x03ce686C4491CA66d4afC9c234EcA66136bE710e", 1);
-}
+//     // Call methods
+//     getName();
+//     getSymbol();
+//     getDecimals();
+//     getTotalSupply();
+//     getBalance(ownerAddress);
+//     transferTokens(ownerAddress,"0x03ce686C4491CA66d4afC9c234EcA66136bE710e", 1);
+// }
 
-// Call getAllInfo
-getAllInfo();
+// // Call getAllInfo
+// getAllInfo();
+
+// Export methods to use in distributeFivePercent.js
+module.exports = {
+    getName,
+    getSymbol,
+    getDecimals,
+    getTotalSupply,
+    getBalance,
+    transferTokens
+};
