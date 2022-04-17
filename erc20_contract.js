@@ -22,7 +22,8 @@ const contractAddress = process.env.CONTRACT_ADDRESS;
 const ownerAddress = process.env.OWNER_ADDRESS;
 const privateKey = Buffer.from(process.env.PRIVATE_KEY, 'hex');
 
-const power = Math.pow(10, 18);
+// Assign power value to show amounts correctly in console
+const power = Math.pow(10, 18); // 10^18
 
 // Check if values from .env are correct
 // console.log(`
@@ -151,13 +152,13 @@ const transferTokens = async(fromAddress, toAddress, amount) => {
     const raw = `0x${serialisedTx.toString('hex')}`;
 
     // Print to console
-    console.log(`Sending tx`);
+    console.log(`Sending transaction. Please wait...`);
 
     // Set tx response
     let txResponse = await web3.eth.sendSignedTransaction(raw);
     
     // Print confirmation to console
-    console.log(`Tx sent!\nCompleted in block number ${txResponse.blockNumber}\nTx hash address: ${txResponse.transactionHash}\n`);
+    console.log(`Transaction sent!\nCompleted in block number ${txResponse.blockNumber}\nTransaction hash address: ${txResponse.transactionHash}\n`);
 
 }
 
