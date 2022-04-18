@@ -4,7 +4,7 @@ The Blockchain Labs repo can be found here: [github.com/JoeyTatu/BlockchainLabs]
 
 
 ## NOTES: ##
-- .env has been included in submission. In normal practise, this file would be omitted.
+- .env is included with Video presentation link.
 - This file explains the processes from start to finish according to the project requirements.
 
 
