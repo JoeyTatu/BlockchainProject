@@ -65,13 +65,22 @@ Ensure Docker Desktop is running (or Docker Daemon).
 ```$ docker system prune -a -f ```
 
 ## ## ## Build Docker container:
-```$ docker build -t blockchain_project . ```
+```$ docker build -t project . ```
 (Don't forget the full stop)
 
 ## ## ## Run Docker container via command:
-``` $ docker run -d -p 80:80 --name blockchain_project blockchain_project ```
+``` $ docker run -d -p 80:80 --name project project ```
 (Output via Logs in Docker Desktop. Remove -d to see output in console as well.)
-(Note: There are many variables that can be changed here, e.g. remove "-d -p 80:80". If no name is entered, a name is generated, etc. This is just what I used.)
+(Note: There are many tags that can be changed here, e.g. remove "-d -p 80:80". If no name is entered, a name is generated, etc. This is just what I used.)
 
 ## ## ## Run Docker via docker-compose.yaml:
 ``` $ docker-compose up --build -d ```
+
+## ## ## Docker Hub:
+- - Upload:
+```$ docker image tag project joeytatu/project:latest ```
+```$ docker image push joeytatu/project:latest ```
+
+- - Get:
+``` $docker pull joeytatu/project:latest ```
+
