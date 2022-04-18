@@ -1,0 +1,13 @@
+services:
+  x15015556_erc20:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - joey_tatu_network
+networks:
+  joey_tatu_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.60.0.0/24
