@@ -4,9 +4,9 @@ services:
       context: .
       dockerfile: Dockerfile
     networks:
-      - joey_tatu
+      - joeys_network
 networks:
-  joey_tatu:
+  joeys_network:
     driver: bridge
     ipam:
       config:

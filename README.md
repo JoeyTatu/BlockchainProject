@@ -40,6 +40,8 @@ It's also good practise to verify and publish the token on Etherscan.
 
 ## 3. Deploy the token contract to the Ethereum Test Net network. ##
 
+- .env is included with Video presentation link.
+
 In the .env file, assign:
 - INFURA_TOKEN,
 - CONTRACT_ADDRESS,

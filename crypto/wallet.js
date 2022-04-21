@@ -18,7 +18,7 @@ const bip39 = require("bip39");
 const { hdkey } = require('ethereumjs-wallet');
 // Do not use {hdkey}
 
-const PASSPHRASE= process.env.PASSPHRASE;
+const PASSPHRASE = process.env.PASSPHRASE;
 
 // Get Wallet
 const getWallet = async() => {
