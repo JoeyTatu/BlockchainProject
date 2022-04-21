@@ -1,7 +1,9 @@
 Been working on Blockchain Labs before creating this repo. Just in case one thought I hadn't done anything beforehand.
 
 The Blockchain Labs repo can be found here: [github.com/JoeyTatu/BlockchainLabs](https://github.com/JoeyTatu/BlockchainLabs)
-
+Was using this Ropsten Entherum Account before creating a new one:
+0x6fFa52a2859B3021b81297c926b6C68ec7fB8d03
+[ropsten.etherscan.io/address/0x6fFa52a2859B3021b81297c926b6C68ec7fB8d03](https://ropsten.etherscan.io/address/0x6fFa52a2859B3021b81297c926b6C68ec7fB8d03)
 
 ## NOTES: ##
 - .env is included with Video presentation link.
@@ -58,7 +60,7 @@ Re-comment lines 165 to 177 and save file to continue.
 ## 4. Build a Node.js application. 
 
 ## ## Run file on its own: 
-```$ npm .\distributeFivePercent.js ```
+```$ node .\distributeFivePercent.js ```
 
 ## ## Run Docker:
 Ensure Docker Desktop is running (or Docker Daemon).
