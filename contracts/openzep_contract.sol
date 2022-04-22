@@ -178,8 +178,8 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * construction.
      */
     constructor() {
-        _name = "Joey Tatu - 15015556"; //name of token to be created
-        _symbol = "JTAT"; // symbol of token to be created 
+        _name = "Duck Duck No!"; //name of token to be created
+        _symbol = "DDNO"; // symbol of token to be created 
 
         _mint(msg.sender, 1000000000000000000000000); //1000000.000000000000000000
     }
