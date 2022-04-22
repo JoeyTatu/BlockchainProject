@@ -34,10 +34,16 @@ const distribute = async() => {
     // Print the number of distribution addresses
     console.log(`There are ${distAddresses.length} distribution addresses`);
 
+    let name = await contract.getName();
+    // Print name
+    // console.log(`Name: ${name}`); // Prints in getName()
+
     // Assign and run getSymbol() from erc20_contract.js
     let symbol = await contract.getSymbol();
     // Print symbol
     // console.log(`Token: ${symbol}`); // Prints in getSymbol()
+
+    console.log(`VALUES IN OUTPUT CORRECTED TO BE READABLE - (value / 10^18)`);
 
     // Assign and run getBalance() from erc20_contract.js
     let remainingSupply = await contract.getBalance(ownerAddress);
